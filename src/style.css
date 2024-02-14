@@ -1,42 +1,41 @@
-*{
+* {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
 
-body{
-  background-color: #E5E5F5;
+body {
+  background-color: #e5e5f5;
 }
 
-#app{
+#app {
   width: 20vw;
   background-color: white;
   margin: 30px auto;
   padding: 20px;
   box-shadow: 1px 1px 1px 3px rgba(208, 202, 233, 0.5),
-  -1px -1px 1px 3px rgba(208, 202, 233, 0.5); 
+    -1px -1px 1px 3px rgba(208, 202, 233, 0.5);
 }
 
-.listDiv{
+.listDiv {
   display: flex;
   justify-content: flex-start;
   gap: 12px;
   margin-bottom: 20px;
-
 }
 
-list-item{
+list-item {
   margin-top: 4px;
-  color: #ACACAC;
+  color: #acacac;
   font-size: 18px;
 }
 
-.pull{
-  color: #ACACAC;
-  font-size: 18px
+.pull {
+  color: #acacac;
+  font-size: 18px;
 }
 
-#recurringDiv{
+#recurringDiv {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
@@ -44,7 +43,7 @@ list-item{
   gap: 10px;
 }
 
-.recur{
+.recur {
   width: 100px;
   padding: 10px 0px;
   border: none;
@@ -52,29 +51,16 @@ list-item{
 }
 
 recurring-button[name="Daily"] .recur {
-  background-color: #F5ED84;
+  background-color: #f5ed84;
 }
 
 recurring-button[name="Weekly"] .recur {
-  background-color: #B5EA81;
+  background-color: #b5ea81;
 }
 
 recurring-button[name="Monthly"] .recur {
-  background-color: #F8AAAA;
+  background-color: #f8aaaa;
 }
 recurring-button[name="Occasional"] .recur {
-  background-color: #B3B3EF;
-}
-
-.buttonDiv{
-  width:25px;
-  height:25px;
-  /* padding: 5px 10px; */
-  
-}
-
-.button{
-  padding: 10px;
-  border-radius: 50%;
-  border: 1.5px solid green
+  background-color: #b3b3ef;
 }
