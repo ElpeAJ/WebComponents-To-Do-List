@@ -7,9 +7,3 @@ class ToDos extends HTMLElement{
 }
 
 window.customElements.define('list-item', ToDos);
-
-// function changeColor(){
-//   this.textContent = this.textContent === '✅' ? " ": '✅'
-// ;}
-const liButton = document.querySelector('.button');
-liButton.addEventListener('click', changeColor);
