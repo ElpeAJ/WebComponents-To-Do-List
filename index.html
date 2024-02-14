@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do-Lists</title>
-  <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-  <div id="app">
-    <div class="listDiv">
-      <div class="butttonDiv"><button class="button"></button></div>
-      <list-item name="Meditation"></list-item>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-Lists</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div></div>
+      <div>
+        <div>
+          <p>TODAY</p>
+        </div>
+        <div><button></button></div>
+      </div>
+      <div><span class="percentage"></span></div>
+      <div><p>33% complete</p></div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Meditation"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Pick up Anna"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Set up meeting with Jay"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Finish Daily Ui"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Second edits on article"></list-item>
+      </div>
+      <div class="listDiv">
+        <button-template></button-template>
+        <list-item name="Email Chris"></list-item>
+      </div>
+      <p class="pull">Pull from recurring lists</p>
+      <div id="recurringDiv">
+        <recurring-button name="Daily"></recurring-button>
+        <recurring-button name="Weekly"></recurring-button>
+        <recurring-button name="Monthly"></recurring-button>
+        <recurring-button name="Occasional"></recurring-button>
+      </div>
     </div>
-    <div class="listDiv">
-      <div class="butttonDiv"><button class="button"></button></div>
-      <list-item name="Pick up Anna"></list-item>
-    </div>
-    <div class="listDiv">
-      <div class="butttonDiv"><button class="button"></button></div>
-      <list-item name="Set up meeting with Jay"></list-item>
-    </div>
-    <div class="listDiv">
-      <div class="butttonDiv"><button class="button"></button></div>
-      <list-item name="Finish Daily Ui"></list-item>
-    </div>
-    <div class="listDiv">
-      <div class="butttonDiv"><button class="button"></button></div>
-      <list-item name="Second edits on article"></list-item>
-    </div>
-    <div class="listDiv">
-      <div class="butttonDiv"><button class="button"></button></div>
-      <list-item name="Email Chris"></list-item>
-    </div>
-    <p class="pull">Pull from recurring lists</p>
-    <div id="recurringDiv">
-      <recurring-button name="Daily"></recurring-button>
-      <recurring-button name="Weekly"></recurring-button>
-      <recurring-button name="Monthly"></recurring-button>
-      <recurring-button name="Occasional"></recurring-button>
-    </div>
-  </div>
-  <script src="src/index.js"></script>
-  <script src="src/recurring.js"></script>
-</body>
+    <script src="src/button.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/recurring.js"></script>
+  </body>
 </html>
