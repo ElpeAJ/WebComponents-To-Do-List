@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do-Lists</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/acc40c9880.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="app">
-      <div></div>
-      <div>
-        <div>
+      <div class="back">
+        <i class="fa-solid fa-arrow-left-long long"></i>
+        <p>Back to lists</p>
+      </div>
+      <div class="todayDiv">
+        <div class="todayP">
           <p>TODAY</p>
         </div>
-        <div><button></button></div>
+        <div>
+          <button class="todayButton"><i class="fa-solid fa-plus"></i></button>
+        </div>
       </div>
-      <div><span class="percentage"></span></div>
-      <div><p>33% complete</p></div>
+
+      <span class="colored-span"></span>
+      <div><p class="complete">33% complete</p></div>
+
       <div class="listDiv">
         <button-template></button-template>
         <list-item name="Meditation"></list-item>
